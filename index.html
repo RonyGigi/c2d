@@ -155,7 +155,7 @@ https://www.youtube.com/embed/iljPOxZ6Vvg
 						<h2>Get in Touch</h2>
 					</header>
 					<form method="post" action="#">
-						<div class="field half first">
+					<div class="field half first">
 							<label for="name">Name</label>
 							<input type="text" name="name" id="name" />
 						</div>
@@ -176,14 +176,17 @@ https://www.youtube.com/embed/iljPOxZ6Vvg
 			</section>
 
 		<!-- Scripts -->
-<script language="javascript" type="text/javascript">
-     $(window).load(function() {
-     $('#loading').hide();
-  });
-</script>
+
 		
 <script src="assets/js/mus.js"></script>
+<script language="javascript" type="text/javascript">
+     $(window).load(function() {
+     $('.loading').hide();
+  });
+</script>
 <script type="text/javascript">
+
+
 function flashBody(elem,time){
     $(elem).css('position','fixed');
     $(elem).css('top',Math.round(20+Math.random()*60)+'%')
