@@ -8,6 +8,25 @@
 	<head>
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
 		<title>C2D</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+    jQuery(window).load(function(){
+        jQuery(".hameid-loader-overlay").fadeOut(500);
+    });
+        </script>
+		<style>
+		.hameid-loader-overlay {
+    width: 100%;
+    height: 100%;
+	visibility: visible;
+    background: url('images/ajax-loader.gif') center no-repeat #FFF;
+    z-index: 99999;
+    position: fixed;
+}
+			inner
+		{background-image: url("images/banner.jpg");}
+			
+		</style>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -30,6 +49,7 @@ $(window).load(function() {
 	</head>
 	<body>
   <!-- Header -->
+<div id="36" class="hameid-loader-overlay" style="visibility: visible;"></div>
 			<header id="header">
 				<div class="inner">
 					<a href="index.html" class="logo">C2D UNITED</a>
@@ -292,7 +312,12 @@ setInterval(myTimer,5000);
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+<script>
+function loader(){
+window.onload=document.getElementById("36").style.visibility = "hidden";
+}
+setTimeout(loader,9000)
+</script>
 <!--<audio src="http://cloud3.raag.me/Malayalam/C%20I%20D%20Moosa-(Various)/Kaadirangi-Various[48]::Raag.Me::.mp3" loop=""></audio>-->
 	</body>
 </html>
